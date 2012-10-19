@@ -1,0 +1,19 @@
+<%= image_tag "quill.jpg" %><h1><%= link_to 'Sign Guest Book', new_entry_path%></h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.name %> says:</td>
+    <td><%= entry.text %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
