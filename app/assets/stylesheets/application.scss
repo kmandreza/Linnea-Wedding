@@ -1,5 +1,127 @@
 @import "foundation";
 
+body {
+	background-color: #70DBDB;
+	//font-family: sans-serif;
+}
+
 div.BrideGroom {
-font-size: 40px
+  color: #5C3317;
+  padding-top: 60px;
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 70px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	width: 450px;
+	text-align: center;
+}
+
+div.datetext {
+  color: #5C3317;
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 70px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	width: 450px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+.surfing_image { 
+  # width: 375px; 
+  # height: 275px;
+  padding-top: 60px;
+  //border: 1px solid blue;
+	//-webkit-border-radius: 25px;
+	}
+
+#WelcomeWhiteBox {
+	display: block;
+	height: 770px;
+	width: 1400px;
+	padding:15px;
+	//background-color: #FAFFB1;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	//border:1px solid blue;
+	-webkit-border-radius: 25px;
+}
+#taglineText{
+  color: #70DBDB;
+	text-align:center;
+	font-size: 40px;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	
+}
+#footer {
+  color: #5C3317;
+	text-align: center;
+	padding: 0px;
+	margin: 10px;
+	font-size: 90%;
+	clear: left;
+}
+
+div.NavigationBar {	
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	//background-color: #F7F7F7;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.NavigationMenu {
+	//border-bottom-color: transparent;
+	//border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-collapse: separate;
+	//border-left-color: transparent;
+	//border-right-color: transparent;
+	//border-top-color: transparent;
+	cursor: pointer;
+	display: block;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 20px;
+  # font-style: normal;
+  # font-variant: normal;
+  # font-weight: normal;
+	line-height: 21px;
+	# margin-bottom: 0px;
+	#  margin-left: 0px;
+	#  margin-right: 0px;
+	#  margin-top: 0px;
+	#  padding-bottom: 12px;
+	#  padding-left: 0px;
+	#  padding-right: 10px;
+  # padding-top: 12px;
+	text-align: center;
+  # text-decoration: none;
+	width: 150px;
+	height: 50px;
+	color: #70DBDB;
+}
+
+a { text-decoration: none; }
+
+div.NavigationMenu:hover {
+	background-color: #a1fffc;
+		width: 160px;
+		
+}
+
+div.Selected {
+  position: relative;
+	background-color: #a1fffc;
+	height: 23px;
+	width: 160px;	
+	
+}
+
+div.Message {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #5C3317;
+  font-size: 20px;
 }
