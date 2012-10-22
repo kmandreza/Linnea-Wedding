@@ -13,7 +13,6 @@ if rvm list strings | grep -q "${ruby_string}" ; then
     rvm --create  "${ruby_string}@${gemset_name}"
   fi
 
-  (
     # Ensure that Bundler is installed, install it if it is not.
     if ! command -v bundle ; then
       gem install bundler
@@ -21,7 +20,6 @@ if rvm list strings | grep -q "${ruby_string}" ; then
 
     # Bundle while redcing excess noise.
     bundle | grep -v 'Using' | grep -v 'complete' | sed '/^$/d'
-  )&
 
 else
 
