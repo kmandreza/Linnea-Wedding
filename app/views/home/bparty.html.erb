@@ -1,0 +1,20 @@
+<div id="featuredContent">
+  <div>
+    <h4>This is a content slider.</h4>
+    <p>Each slide holds arbitrary content, like text or actions.</p>
+  </div>
+  <div>
+    <h4>We can include text and buttons, like this!</h4>
+    <p><a href="http://www.facebook.com/kmandreza" class="button" target="_blank">Be My Friend?</a></p>
+  </div>
+  <div>
+    <h4>Or images like this</h4>
+    <p><%= image_tag("Surfing.png", :class => "surfing_image") %></p>
+  </div>
+</div>
+
+<script type="text/javascript"> 
+   $(window).load(function() {
+       $('#featuredContent').orbit({ fluid: '36X26' });
+   });
+</script>
