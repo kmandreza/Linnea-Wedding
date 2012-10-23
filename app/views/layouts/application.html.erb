@@ -24,6 +24,44 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
+  	<div class="row">
+		<div class="three columns"><div id="image"><%= image_tag("Surfing.png", :class => "surfing_image") %></div>
+	</div>
+	<div class="six columns"><div class="BrideGroom">Linnea &amp; John</div><div class="datetext">June 1, 2013</div>
+	</div>
+	<div class="three columns"><div id="starfish"><%= image_tag("Starfish.jpeg", :class => "surfing_image") %></div>
+	</div>
+	</div>
+
+	<div id="WelcomeWhiteBox">
+		<div class="row">
+			<div class="twelve columns" id="taglineText"><b id="text">Welcome Loved Ones To Our Wedding Website!</b></div>
+		</div>
+		<div class="row">
+			<div class="three columns">
+				<ul class="side-nav">
+					<li class="<%= params['action'] == 'index' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
+					<li class="<%= params['action'] == 'story' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
+					<li class="<%= params['action'] == 'bparty' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
+					<li class="<%= params['action'] == 'wday' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
+					<li class="<%= params['action'] == 'accommodations' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Accommodations', accommodations_path %></div></a></li>
+					<li class="<%= params['action'] == 'travel' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel San Diego', travel_path %></div></a></li>
+					<li class="<%= params['action'] == 'registry' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
+					<li class="<%= params['action'] == 'gb' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', gb_path %></div></a></li>
+					<li class="<%= params['action'] == 'contact' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
+					<li class="<%= params['action'] == 'address' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', address_path %></div></a></li>
+				</ul>
+			</div>
+			<div class="nine columns content">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">Inspired by 
+		<a href="http://www.weddingwire.com/wedding/UserViewWebsite?wid=cb29d9b93e0dadd5&themeCode=15101&flash=skip"class="footer">WeddingWire</a>, made by <a href="http://www.linkedin.com/in/khara" class="footer">Khara Muniz</a>
+	</div>
+
 </body>
 </html>
