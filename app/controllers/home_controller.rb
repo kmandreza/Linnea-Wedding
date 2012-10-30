@@ -28,4 +28,7 @@ class HomeController < ApplicationController
   
   def address
   end
+  
+  def Marriott
+  end
 end
