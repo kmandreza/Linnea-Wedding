@@ -8,7 +8,7 @@ Guestbook::Application.routes.draw do
   get "gb" => 'home#gb'
   get "contact" => 'home#contact'
   get "address" => 'home#address'
-  
+  get "Marriott" => 'home#accommodations'
 
   resources :entries
   root :to => 'home#index'
