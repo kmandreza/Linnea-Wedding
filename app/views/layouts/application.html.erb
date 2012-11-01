@@ -27,7 +27,7 @@
   	<div class="row">
 		<div class="three columns"><div id="image"><%= image_tag("Surfing.png", :class => "surfing_image") %></div>
 	</div>
-	<div class="six columns"><div class="BrideGroom">Linnea &amp; John</div><div class="datetext">June 1, 2013</div>
+	<div class="six columns"><div class="BrideGroom">Linnea &amp; John</div><div class="datetext">Saturday June 1, 2013</div>
 	</div>
 	<div class="three columns"><div id="starfish"><%= image_tag("Starfish.jpeg", :class => "surfing_image") %></div>
 	</div>
@@ -40,14 +40,14 @@
 		<div class="row">
 			<div class="three columns">
 				<ul class="side-nav">
-					<li class="<%= params['action'] == 'index' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
+					<li class="<%= params['controller'] == 'home' && params['action'] == 'index' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
 					<li class="<%= params['action'] == 'story' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
 					<li class="<%= params['action'] == 'bparty' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
 					<li class="<%= params['action'] == 'wday' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
 					<li class="<%= params['action'] == 'accommodations' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Accommodations', accommodations_path %></div></a></li>
 					<li class="<%= params['action'] == 'travel' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel San Diego', travel_path %></div></a></li>
 					<li class="<%= params['action'] == 'registry' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
-					<li class="<%= params['action'] == 'gb' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', gb_path %></div></a></li>
+					<li class="<%= params['controller'] == 'entries' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
 					<li class="<%= params['action'] == 'contact' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
 					 <li class="<%= params['action'] == 'address' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ" %></div></a></li>
 				</ul>
