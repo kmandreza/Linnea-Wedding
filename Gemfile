@@ -7,8 +7,6 @@ gem 'rails', '3.2.3'
 
 gem 'pg'
 
-  
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +16,7 @@ group :assets do
 
   # Add these gems
     gem 'compass-rails', '~> 1.0.3'
-    gem 'zurb-foundation', '~> 3.2.0'    
+    gem 'zurb-foundation', '~> 3.2.0'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
