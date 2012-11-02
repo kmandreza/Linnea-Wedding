@@ -5,8 +5,8 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-#gem 'pg'
+gem 'pg'
+
   
 
 
@@ -18,8 +18,7 @@ group :assets do
 
   # Add these gems
     gem 'compass-rails', '~> 1.0.3'
-    gem 'zurb-foundation', '~> 3.0.9'
-    
+    gem 'zurb-foundation', '~> 3.2.0'    
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
