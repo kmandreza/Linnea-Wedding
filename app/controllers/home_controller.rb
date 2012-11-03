@@ -20,10 +20,15 @@ class HomeController < ApplicationController
   def registry
   end
   
-  def gb
+  def contact
   end
   
-  def contact
+  def send_email
+    ContactMailer.contact_email(params).deliver
+    redirect_to contact_path
+  end
+  
+  def mail
   end
   
   def address

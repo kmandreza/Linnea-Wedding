@@ -1,12 +1,13 @@
-<form>
+<%= form_tag send_email_path, method: 'post' do %>
   <label>Name</label>
-  <input type="text" placeholder="First and Last Name" />
-
+  <%= text_field_tag 'name', nil, :placeholder => 'First and Last Name' %>
+  
   <label>Email Address</label>
-  <input type="text" placeholder="example@gmail.com" />
+  <%= text_field_tag 'email', nil, :placeholder => 'example@gmail.com' %>
+  
 
   <label>Message</label>
-<textarea placeholder="Message" style="margin: 0px -34.5333px 12px 0px; width: 680px; height: 280px; "></textarea>
-</form>
-
-<a href="#" class="[medium] button">Send</a>
+  <%= text_area_tag 'message', nil, style: 'margin: 0px -34.5333px 12px 0px; width: 680px; height: 280px;' %>
+ 
+  <%= submit_tag 'Send', :class => "[medium] button" %>
+<% end %>

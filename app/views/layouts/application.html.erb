@@ -40,16 +40,16 @@
 		<div class="row">
 			<div class="three columns">
 				<ul class="side-nav">
-					<li class="<%= params['controller'] == 'home' && params['action'] == 'index' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
-					<li class="<%= params['action'] == 'story' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
-					<li class="<%= params['action'] == 'bparty' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
-					<li class="<%= params['action'] == 'wday' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
-					<li class="<%= params['action'] == 'accommodations' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Accommodations', accommodations_path %></div></a></li>
-					<li class="<%= params['action'] == 'travel' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel San Diego', travel_path %></div></a></li>
-					<li class="<%= params['action'] == 'registry' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
-					<li class="<%= params['controller'] == 'entries' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
-					<li class="<%= params['action'] == 'contact' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
-					 <li class="<%= params['action'] == 'address' ? 'active' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ" %></div></a></li>
+					<li class="<%= params['controller'] == 'home' && params['action'] == 'index' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
+					<li class="<%= params['action'] == 'story' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
+					<li class="<%= params['action'] == 'bparty' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
+					<li class="<%= params['action'] == 'wday' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
+					<li class="<%= params['action'] == 'accommodations' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Accommodations', accommodations_path %></div></a></li>
+					<li class="<%= params['action'] == 'travel' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel San Diego', travel_path %></div></a></li>
+					<li class="<%= params['action'] == 'registry' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
+					<li class="<%= params['controller'] == 'entries' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
+					<li class="<%= params['action'] == 'contact' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
+					 <li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ" %></div></a></li>
 				</ul>
 			</div>
 			<div class="nine columns content">

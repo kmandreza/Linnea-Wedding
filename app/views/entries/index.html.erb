@@ -1,19 +1,11 @@
-<%= image_tag "quill.jpg" %><h1><%= link_to 'Sign Guest Book', new_entry_path%></h1>
+<%= image_tag "quill.jpg", class: 'quill' %><h3><u><%= link_to 'Sign Guest Book', new_entry_path%></h3></u>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @entries.each do |entry| %>
-  <tr>
-    <td><%= entry.name %> says:</td>
-    <td><%= entry.text %></td>
-  </tr>
+<p>
+<%= entry.name %> says:
+<%= entry.text %>
+</p>
 <% end %>
-</table>
 
-<br />
 

@@ -118,11 +118,26 @@ div.content {
   padding-top: 20px;
 }
 
-li.active {
+li.current {
 	background-color: #a1fffc;
+}
+
+li.current a {
+	color: #5C3317;
 }
 
 div.featuredContent {
 	color: red;
 
+}
+
+img.quill {
+	height: 40px;
+	width:40px;
+	float: left;
+}
+
+.tabs.pill dd.active a, .tabs.pill li.active a {
+	background-color: #a1fffc;
+	color: #5C3317;
 }

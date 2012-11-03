@@ -44,7 +44,7 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to @entry, notice: 'Entry was successfully created.' }
+        format.html { redirect_to entries_path, notice: 'Thank you for signing the guest book!' }
         format.json { render json: @entry, status: :created, location: @entry }
       else
         format.html { render action: "new" }
