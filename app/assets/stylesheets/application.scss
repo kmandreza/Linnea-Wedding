@@ -24,7 +24,7 @@ div.BrideGroom {
 	margin-left: auto;
 	margin-right:auto;
 	font-size: 70px;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-family: Tahoma;
 	width: 450px;
 	text-align: center;
 }
@@ -34,7 +34,7 @@ div.datetext {
 	margin-left: auto;
 	margin-right:auto;
 	font-size: 45px;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-family: Tahoma;
 	width: 450px;
 	text-align: center;
 	padding-bottom: 30px;
@@ -68,7 +68,7 @@ div.datetext {
   color: #70DBDB;
 	text-align:center;
 	font-size: 40px;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-family: Tahoma;
 
 }
 #footer {
@@ -93,7 +93,7 @@ div.NavigationMenu {
 	border-collapse: separate;
 	cursor: pointer;
 	display: block;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-family: 'Tahoma';
 	font-size: 20px;
 	line-height: 21px;
 	text-align: center;
@@ -102,14 +102,14 @@ div.NavigationMenu {
 	padding-bottom: 10px;
 }
 
-a { text-decoration: none; }
+ a { text-decoration: none; }
 
 div.NavigationMenu:hover {
 	background-color: #a1fffc;
 }
 
 div.Message {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-family: Tahoma;
   color: #5C3317;
   font-size: 15px;
 }
