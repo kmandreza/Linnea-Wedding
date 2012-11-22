@@ -25,6 +25,7 @@ class HomeController < ApplicationController
   
   def send_email
     ContactMailer.contact_email(params).deliver
+    flash[:notice] = "Thank you for contacting us! Your message has been sent."
     redirect_to contact_path
   end
   

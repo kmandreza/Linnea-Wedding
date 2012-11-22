@@ -1,3 +1,6 @@
+<% if flash[:notice] %>
+	<div class="alert-box secondary"><%= flash[:notice]%></div>
+<% end %>
 <%= form_tag send_email_path, method: 'post' do %>
   <label>Name</label>
   <%= text_field_tag 'name', nil, :placeholder => 'First and Last Name' %>

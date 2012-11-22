@@ -6,63 +6,57 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	
+
 	<!-- Uncomment to make IE8 render like IE7 -->
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-	
+
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
+
 	<title><%= content_for?(:title) ? yield(:title) : "LJWedding" %></title>
-  
+
 	<!-- Included CSS Files -->
 	<%= stylesheet_link_tag "application" %>
-	
+
 	<!-- Included JS Files  -->
 	<%= javascript_include_tag "application" %>
-  
-  <%= csrf_meta_tags %>
+
+	<%= csrf_meta_tags %>
 </head>
 <body>
-  	<div class="row">
-		<div class="three columns"><div id="image"><%= image_tag("Surfing.png", :class => "surfing_image") %></div>
-	</div>
-	<div class="six columns"><div class="BrideGroom">Linnea &amp; John</div><div class="datetext">Saturday June 1, 2013</div>
-	</div>
-	<div class="three columns"><div id="starfish"><%= image_tag("Starfish.jpeg", :class => "surfing_image") %></div>
-	</div>
-	</div>
-
-	<div id="WelcomeWhiteBox">
-		<div class="row">
-			<div class="twelve columns" id="taglineText"><b id="text">Welcome Loved Ones To Our Wedding Website!</b></div>
+	<div class="row" style="margin-bottom:0px; padding:0px;">
+		<div class="three columns pink-background" style="height:240px;">
 		</div>
-		<div class="row">
-			<div class="three columns">
-				<ul class="side-nav">
-					<li class="<%= params['controller'] == 'home' && params['action'] == 'index' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
-					<li class="<%= params['action'] == 'story' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
-					<li class="<%= params['action'] == 'bparty' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
-					<li class="<%= params['action'] == 'wday' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
-					<li class="<%= params['action'] == 'accommodations' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Hotels', accommodations_path %></div></a></li>
-					<li class="<%= params['action'] == 'travel' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel Info', travel_path %></div></a></li>
-					 <li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ" %></div></a></li>
-					 <li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'RSVP', "http://en.wikipedia.org/wiki/RSVP_(invitations)" %></div></a></li>
-					<li class="<%= params['action'] == 'registry' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
-					<li class="<%= params['controller'] == 'entries' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
-					<li class="<%= params['action'] == 'contact' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
-				</ul>
-			</div>
-			<div class="nine columns content">
-				<%= yield %>
-			</div>
-		</div>
+		<div class="nine columns" style="background-color:white;"><div><%= image_tag 'wedding-banner.gif'%></div>
 	</div>
+</div>
 
 
-	<div id="footer">Inspired by 
-		<a href="http://www.weddingwire.com/wedding/UserViewWebsite?wid=cb29d9b93e0dadd5&themeCode=15101&flash=skip"class="footer">WeddingWire</a>, made by <a href="http://www.linkedin.com/in/khara" class="footer">Khara Muniz</a>
+<div class="row" style="padding:0px; margin-top:0px;">
+	<div class="three columns pink-background" style="height:100%">
+		<ul class="side-nav">
+			<li class="<%= params['controller'] == 'home' && params['action'] == 'index' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Welcome', root_path %></div></a></li>
+			<li class="<%= params['action'] == 'story' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Our Story', story_path %></div></a></li>
+			<li class="<%= params['action'] == 'bparty' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Bridal Party', bparty_path %></div></a></li>
+			<li class="<%= params['action'] == 'wday' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Wedding Day', wday_path %></div></a></li>
+			<li class="<%= params['action'] == 'accommodations' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Hotels', accommodations_path %></div></a></li>
+			<li class="<%= params['action'] == 'travel' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel Info', travel_path %></div></a></li>
+			<li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Address', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ", :target => '_blank' %></div></a></li>
+			<li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'RSVP', "http://en.wikipedia.org/wiki/RSVP_(invitations)", :target => '_blank' %></div></a></li>
+			<li class="<%= params['action'] == 'registry' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
+			<li class="<%= params['controller'] == 'entries' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
+			<li class="<%= params['action'] == 'contact' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
+		</ul>
 	</div>
+	<div class="nine columns" style="background-color:white; padding-top:0px; margin-top:0px;">
+		<%= yield %>
+	</div>
+</div>
+
+
+<div id="footer">Inspired by 
+	<a href="http://www.weddingwire.com/wedding/UserViewWebsite?wid=cb29d9b93e0dadd5&themeCode=15101&flash=skip"class="footer">WeddingWire</a>, made by <a href="http://www.linkedin.com/in/khara" class="footer">Khara Muniz</a>
+</div>
 
 </body>
 </html>

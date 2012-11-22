@@ -1,7 +1,7 @@
 @import "foundation";
 
 body {
-	background-color: #70DBDB;
+	background-image: image-url('90sbackground.jpg');
 	//font-family: sans-serif;
 }
 
@@ -53,6 +53,10 @@ div.datetext {
 .image{
 
 }
+
+.column, .columns {
+	padding:0px;
+}
 #WelcomeWhiteBox {
 	display: block;
 	width: 980px;
@@ -97,15 +101,19 @@ div.NavigationMenu {
 	font-size: 20px;
 	line-height: 21px;
 	text-align: center;
-	color: #70DBDB;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
- a { text-decoration: none; }
+div.NavigationMenu a {
+	color: #5C3317;
+}
 
-div.NavigationMenu:hover {
-	background-color: #a1fffc;
+a { text-decoration: none; }
+
+div.NavigationMenu a:hover {
+	color: #a1fffc;
+	text-decoration: underline;
 }
 
 div.Message {
@@ -118,17 +126,20 @@ div.content {
   padding-top: 20px;
 }
 
-li.current {
-	background-color: #a1fffc;
-}
 
 li.current a {
-	color: #5C3317;
+	color: #a1fffc;
+	text-decoration: underline;
 }
 
 div.featuredContent {
 	color: red;
 
+}
+
+div.pink-background {
+	background-image: image-url('pink-background.gif');
+	height: 100%;
 }
 
 img.quill {
