@@ -109,7 +109,8 @@ div.NavigationMenu a {
 	color: #5C3317;
 }
 
-a { text-decoration: none; }
+a { text-decoration: underline; 
+	color: #5C3317;}
 
 div.NavigationMenu a:hover {
 	color: #a1fffc;
@@ -126,15 +127,19 @@ div.content {
   padding-top: 20px;
 }
 
+.bparty_content {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
 
 li.current a {
 	color: #a1fffc;
 	text-decoration: underline;
 }
 
-div.featuredContent {
-	color: red;
-
+#featuredContent {
+	padding: 100px;
 }
 
 div.pink-background {
