@@ -1,5 +1,16 @@
 @import "foundation";
 
+@font-face {
+    font-family: 'MishkaRegular';
+    src: asset-url('Mishka-webfont.eot',font);
+    src: asset-url('Mishka-webfont.eot?#iefix',font) format('embedded-opentype'),
+         asset-url('Mishka-webfont.woff',font) format('woff'),
+         asset-url('Mishka-webfont.ttf',font) format('truetype'),
+         asset-url('Mishka-webfont.svg#MishkaRegular',font) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	background-image: image-url('90sbackground.jpg');
 	//font-family: sans-serif;
@@ -97,7 +108,7 @@ div.NavigationMenu {
 	border-collapse: separate;
 	cursor: pointer;
 	display: block;
-	font-family: 'Tahoma';
+	font-family: 'MishkaRegular';
 	font-size: 20px;
 	line-height: 21px;
 	text-align: center;
