@@ -4,7 +4,7 @@ class ContactMailer < ActionMailer::Base
   def contact_email(params)
     @message = params['message']
     
-    mail(:to => 'kmandreza@gmail.com', 
+    mail(:to => 'info@johnandlinneawedding.com', 
       :from => "#{params['name']} <#{params['email']}>", 
       :subject => 'Wedding Question')
   end
