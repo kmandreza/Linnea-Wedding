@@ -109,7 +109,7 @@ div.NavigationMenu {
 	cursor: pointer;
 	display: block;
 	font-family: 'MishkaRegular';
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 21px;
 	text-align: center;
 	padding-top: 10px;
@@ -169,4 +169,5 @@ img.quill {
 .tabs.pill dd.active a, .tabs.pill li.active a {
 	background-color: #a1fffc;
 	color: #5C3317;
+	margin-left: 100px;
 }
