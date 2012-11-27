@@ -142,7 +142,7 @@ div.content {
 .bparty_content {
 	padding-left: 45px;
 	padding-right: 45px;
-	min-height: 544px;
+	min-height: 570px;
 }
 
 
@@ -169,5 +169,9 @@ img.quill {
 .tabs.pill dd.active a, .tabs.pill li.active a {
 	background-color: #a1fffc;
 	color: #5C3317;
-	margin-left: 100px;
+}
+
+.tabs.pill {
+	width: 80%;
+	margin: 0px auto;
 }
