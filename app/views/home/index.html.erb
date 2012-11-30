@@ -2,14 +2,14 @@
 <div class="Message" style="padding-top: 20px">
 <p>Hi family &amp; friends!</p>
 
-<p>On our website you can find information about our wedding including <%= link_to 'lodging', accommodations_path %>, <%= link_to 'travel information', travel_path %>, etc. <%= link_to 'Let us know if you have any questions or comments.', contact_path %></p>
+<p>On our website you can find information about our wedding including <%= link_to 'lodging', accommodations_path , :target => '_blank'%>, <%= link_to 'travel information', travel_path , :target => '_blank'%>, etc. <%= link_to 'Let us know if you have any questions or comments.', contact_path , :target => '_blank'%></p>
 
-<p>If your address has changed since you last filled out the address form, <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ"> please complete a new form.</a></p>
+<p>If your contact information has changed recently, <a href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ" target = "_blank"> please complete a new form.</a></p>
 
 <p>Thank you for visiting!  Hope you can celebrate with us at our wedding!</p>
 
 <p>Love,</p>
-<p><%= link_to 'Linnea & John', story_path %></p>
+<p><%= link_to 'Linnea & John', story_path , :target => '_blank'%></p>
 
 	<%= image_tag 'WelcomePage.Jpeg', style: 'margin: 10px; float:left;' %>
 
