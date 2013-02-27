@@ -42,7 +42,7 @@
 			<li class="<%= params['action'] == 'accommodations' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Hotels', accommodations_path %></div></a></li>
 			<li class="<%= params['action'] == 'travel' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Travel Info', travel_path %></div></a></li>
 			<li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Update Your Information', "https://docs.google.com/spreadsheet/viewform?fromEmail=true&formkey=dHpjVFhqRmtOYjVrRFFfT0VnQlgxN1E6MQ", :target => '_blank' %></div></a></li>
-			<!-- <li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'RSVP', "http://en.wikipedia.org/wiki/RSVP_(invitations)", :target => '_blank' %></div></a></li> -->
+			<li class="<%= params['action'] == 'address' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'RSVP', "https://docs.google.com/spreadsheet/viewform?formkey=dGNtQ2dEY0xXMzV3aXlmQUtCUERIS3c6MQ#gid=0", :target => '_blank' %></div></a></li>
 			<li class="<%= params['action'] == 'registry' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Registry', registry_path %></div></a></li>
 			<li class="<%= params['controller'] == 'entries' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Guest Book', entries_path %></div></a></li>
 			<li class="<%= params['action'] == 'contact' ? 'current' : '' %>"><a href="#"><div class="NavigationMenu"><%= link_to 'Contact Us', contact_path %></div></a></li>
